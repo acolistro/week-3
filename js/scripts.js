@@ -4,14 +4,11 @@ $(document).ready(function() {
     //Gather input from user (number)
     var number = $("input#number").val();
     var numberInput = parseInt(number);
-    var currentNumber = 0;
     var numberArray = [];
 
     //Count from zero to inputted number and push it into array
-    for (currentNumber <= numberInput) {
-      currentNumber += 1;
-      numberInput += currentNumber;
-      numberArray.push(numberInput);
+    for (var currentNumber = 0; currentNumber <= numberInput; currentNumber += 1) {
+      numberArray.push(toString(currentNumber));
     }
 
     //Turn each array item into a string and output it
@@ -29,10 +26,8 @@ $(document).ready(function() {
       }
     }*/
 
-    numberArray.forEach(numberOutput);
 
-    function numberOutput(item) {
-        numberInput = toString(numberInput);
+    numberArray.forEach(function(item) {
         if (item.includes(1)) {
           $("ul").append("<li>Beep!</li>");
         } else if (item.includes(2)) {
@@ -42,7 +37,7 @@ $(document).ready(function() {
         } else {
           $("ul").append("<li>" + item + "</li>")
         }
-        }
+      });
 
 
     $("#main").hide();
