@@ -8,27 +8,42 @@ $(document).ready(function() {
     var numberArray = [];
 
     //Count from zero to inputted number and push it into array
-    while (currentNumber <= numberInput) {
+    for (currentNumber <= numberInput) {
       currentNumber += 1;
       numberInput += currentNumber;
       numberArray.push(numberInput);
     }
 
-    numberArray.forEach(numberInput) {
+    //Turn each array item into a string and output it
+
+  /*  function numberOutput(numberInput) {
       numberInput = toString(numberInput);
-    }
-    //var numberOutput = toString(numberInput);
+      if (numberInput.includes(1)) {
+        $("ul").append("<li>Beep!</li>");
+      } else if (numberInput.includes(2)) {
+        $("ul").append("<li>Boop!</li>");
+      } else if (numberInput.includes(3)) {
+        $("ul").append("<li>I'm sorry, Dave. I'm afraid I can't do that.</li>")
+      } else {
+        $("ul").append("<li>" + numberInput + "</li>")
+      }
+    }*/
 
+    numberArray.forEach(numberOutput);
 
-    if (numberInput.includes(1)) {
-      $("ul").append("<li>Beep!</li>");
-    } else if (numberInput.includes(2)) {
-      $("ul").append("<li>Boop!</li>");
-    } else if (numberInput.includes(3)) {
-      $("ul").append("<li>I'm sorry, Dave. I'm afraid I can't do that.</li>")
-    } else {
-      $("ul").append("<li>" + numberInput + "</li>")
-    }
+    function numberOutput(item) {
+        numberInput = toString(numberInput);
+        if (item.includes(1)) {
+          $("ul").append("<li>Beep!</li>");
+        } else if (item.includes(2)) {
+          $("ul").append("<li>Boop!</li>");
+        } else if (item.includes(3)) {
+          $("ul").append("<li>I'm sorry, Dave. I'm afraid I can't do that.</li>")
+        } else {
+          $("ul").append("<li>" + item + "</li>")
+        }
+        }
+
 
     $("#main").hide();
     $("#output").show();
