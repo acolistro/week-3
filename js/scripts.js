@@ -1,27 +1,27 @@
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
-    event.preventDefault();
     var numberInput = parseInt($("input#number").val());
-    var numberArray = []
-    var currentNumber = 0;
 
 
-    while (currentNumber <= numberInput) {
-      currentNumber += 1;
-      numberInput += currentNumber;
-      numberArray.push(numberInput);
+    /*var currentNumber = 0;
+
+    var numberOutput = function() {
+      while (currentNumber <= numberInput) {
+        currentNumber += 1;
+        numberInput += currentNumber;
+      }
     }
 
+    var listItemOutput = numberInput.numberOutput();
 
-
-    /*if (numberOutput.includes("1")) {
+    if (listItemOutput.includes("1")) {
       $("ul").append("<li>Beep!</li>");
-    } else if (numberOutput.includes("2")) {
+    } else if (listItemOutput.includes("2")) {
       $("ul").append("<li>Boop!</li>");
-    } else if (numberOutput.includes("3")) {
+    } else if (listItemOutput.includes("3")) {
       $("ul").append("<li>I'm sorry, Dave. I'm afraid I can't do that.</li>")
     } else {
-      $("ul").append("<li>" + numberOutput + "</li>")
+      $("ul").append("<li>" + listItemOutput + "</li>")
     }*/
 
 
@@ -29,6 +29,6 @@ $(document).ready(function() {
     $("#main").hide();
     $("#output").show();
 
-
+    event.preventDefault();
   });
 });
