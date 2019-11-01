@@ -4,20 +4,22 @@ $(document).ready(function() {
     //Gather input from user (number)
     var number = $("input#number").val();
     var numberInput = parseInt(number);
+    var currentNumber = 0;
   //  var numberArray = [];
 
     //Count from zero to inputted number and push it into array
-    for (var currentNumber = 0; currentNumber <= numberInput; currentNumber += 1) {
-      toString(currentNumber);
-      function iterate(currentNumber) {
-          if (currentNumber.includes(1)) {
-            $("ul").append("<li>Beep!</li>");
-          } else if (currentNumber.includes(2)) {
+    for (currentNumber = 0; currentNumber <=  numberInput; currentNumber += 1) {
+      currentNumberString = currentNumber.toString();
+      //toString(currentNumber);
+      function iterate(currentNumberString) {
+        if (currentNumberString.includes(3)) {
+          $("ul").append("<li>I'm sorry, Dave. I'm afraid I can't do that.</li>");
+        } else if (currentNumberString.includes(2)) {
             $("ul").append("<li>Boop!</li>");
-          } else if (currentNumber.includes(3)) {
-            $("ul").append("<li>I'm sorry, Dave. I'm afraid I can't do that.</li>");
+          } else if (currentNumberString.includes(1)) {
+            $("ul").append("<li>Beep!</li>");
           } else {
-            $("ul").append("<li>" + currentNumber + "</li>");
+            $("ul").append("<li>" + currentNumberString + "</li>");
           }
         }
       }
