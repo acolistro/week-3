@@ -13,13 +13,13 @@ $(document).ready(function() {
       //toString(currentNumber);
       function iterate(currentNumberString) {
         if (currentNumberString.includes(3)) {
-          $("ul").append("<li>I'm sorry, Dave. I'm afraid I can't do that.</li>");
+          $(".unstyled").append("<li>I'm sorry, Dave. I'm afraid I can't do that.</li>");
         } else if (currentNumberString.includes(2)) {
-            $("ul").append("<li>Boop!</li>");
+            $(".unstyled").append("<li>Boop!</li>");
           } else if (currentNumberString.includes(1)) {
-            $("ul").append("<li>Beep!</li>");
+            $(".unstyled").append("<li>Beep!</li>");
           } else {
-            $("ul").append("<li>" + currentNumberString + "</li>");
+            $(".unstyled").append("<li>" + currentNumberString + "</li>");
           }
         }
       }
