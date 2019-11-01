@@ -8,7 +8,6 @@ $(document).ready(function() {
 
     //Count from zero to inputted number and push it into array
     for (var currentNumber = 0; currentNumber <= numberInput; currentNumber += 1) {
-      //numberArray.push(toString(currentNumber));
       toString(currentNumber);
       function iterate(currentNumber) {
           if (currentNumber.includes(1)) {
@@ -20,7 +19,8 @@ $(document).ready(function() {
           } else {
             $("ul").append("<li>" + currentNumber + "</li>");
           }
-    }
+        }
+      }
 
     $("#main").hide();
     $("#output").show();
