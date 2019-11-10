@@ -8,7 +8,12 @@
 
 _This application is designed to take a number string from the user, parse the string into an integer/number datatype, generate an output counting from 0 through the given number and output each count into a list that is shown to the user after they hit submit. There are special rules, though. If the number includes a "1", "2", or "3", the application will return a message in place of that number._
 
-_I experienced a lot of bugs while building this, so user beware._
+## Specs
+
+* _Take input from user and parse it to an integer_
+* _Use for loop to push every number from 0 to the inputted number into an empty array_
+* _Use a forEach function to change numbers that include 1, 2 or 3 to a sentence._
+* _Append each element to ul and show list to user upon submit._
 
 
 ## Setup/Installation Requirements
@@ -18,15 +23,15 @@ _I experienced a lot of bugs while building this, so user beware._
 * _Edit script as necessary or simply drag index.html to your browser window to use the application as is_
 * _Your browser needs to be the most current version of Chrome in order for this application to run as intended._
 * _Your text editor must be able to handle HTML, CSS and JavaScript._
-* _You may access the gh-pages version of this application by following this link:_ acolistro.github.io/week-3 
+* _You may access the gh-pages version of this application by following this link:_ acolistro.github.io/week-3
 
 ## Known Bugs
 
-_As stated above, I encountered many bugs with loops, syntax and other functionality while building this application. As is currently is, the list that should be populated with the for loop and function within remains empty when user submits their number. The version available on the branch "testdebug" allows for the list to populate, but it populates with an [unidentified object]. There are n known workarounds in it's current state. Also, if the user enters a non-number character in their string, the application will not run as intended_
+_There are no known bugs with this application at this time as long as it is viewed in the chrome browser. Also, this application is not designed to work with web accessibility tools._
 
 ## Support and contact details
 
-_If you are exploring this application and are confronted with any issues or questions, please feel free to send me an email at arcolistro@gmail.com. Also, I encourage anyone to clone this repository and rework the code to debug it and contact me with a push request. If you would just like to email me with tips or advice, that is also welcome._
+_If you are exploring this application and are confronted with any issues or questions, please feel free to send me an email at arcolistro@gmail.com._
 
 
 ## Technologies Used
@@ -35,6 +40,6 @@ _This application was built using the Atom text editor, GitBash and a google chr
 
 ### License
 
-*No licensing is necessary for the current version of this application*
+*No licensing is necessary for the current version of this application as the background image is labeled for reuse and the font is free from google fonts*
 
 Copyright (c) 2016 **_MallSoft95 LLC_**
