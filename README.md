@@ -10,9 +10,15 @@ _This application is designed to take a number string from the user, parse the s
 
 ## Specs
 
-* _Take input from user and parse it to an integer_
+* _The program take input from user and parse it to an integer_
+  - _Input Example: "23"_
+  - _Output Example: 23_
 * _Use for loop to push every number from 0 to the inputted number into an empty array_
-* _Use a forEach function to change numbers that include 1, 2 or 3 to a sentence._
+  - _Input Example: 5_
+  - _Output Example: [0, 1, 2, 3, 4, 5]_
+* _Use a forEach function to change numbers that include 1, 2 or 3 to a sentence string._
+  - _Input Example: [0, 1, 2, 3, 4, 5]_
+  - _Output Example: [0, "sentence", "sentence", "sentence, 4, 5"]_
 * _Append each element to ul and show list to user upon submit._
 * _Clear list and provide new output upon every click of submit without need for page refresh._
 
