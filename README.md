@@ -14,6 +14,7 @@ _This application is designed to take a number string from the user, parse the s
 * _Use for loop to push every number from 0 to the inputted number into an empty array_
 * _Use a forEach function to change numbers that include 1, 2 or 3 to a sentence._
 * _Append each element to ul and show list to user upon submit._
+* _Clear list and provide new output upon every click of submit without need for page refresh._
 
 
 ## Setup/Installation Requirements

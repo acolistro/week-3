@@ -1,32 +1,32 @@
-var numberArray = [];
-
-function numberOutput(element) {
-  var outputString = element.toString();
-    if (outputString.includes(3)) {
-      $("ul").append("<li>I'm sorry, Dave. I'm afraid I can't do that.</li>");
-    } else if (outputString.includes(2)) {
-      $("ul").append("<li>Boop!</li>");
-    } else if (outputString.includes(1)) {
-      $("ul").append("<li>Beep!</li>");
+function beep(numberInput) {
+  var numberArray = [];
+  for (i=0; i <= numberInput; i++) {
+    if (i.toString().includes(3)) {
+      numberArray.push("<li>I'm sorry, Dave. I'm afraid I can't do that.</li>");
+    } else if (i.toString().includes(2)) {
+      numberArray.push("<li>Boop!</li>");
+    } else if (i.toString().includes(1)) {
+      numberArray.push("<li>Beep!</li>");
     } else {
-      $("ul").append("<li>" + outputString + "</li>");
+      numberArray.push("<li>" + i + "</li>");
     }
-  };
-
+  }
+  return numberArray;
+};
 
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
     var numberInput = parseInt($("input#number").val());
+    let results = beep(numberInput);
+    $(".unstyled").text("");
 
-    for (i=0; i <= numberInput; i++) {
-      numberArray.push(i);
-      console.log(numberArray);
-    }
+    results.forEach(outputList);
 
-    numberArray.forEach(numberOutput);
+    function outputList(result) {
+      $(".unstyled").append(result);
+    };
 
-    $("#main").hide();
     $("#output").show();
 
   });
